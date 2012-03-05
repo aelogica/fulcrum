@@ -1,0 +1,14 @@
+<% form_tag project_stories_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :title => nil %>
+  </p>
+<% end %>
+
+<ul id="results">
+  <% @stories.each do |story| %>
+    <li>
+    	<%= story.title %>
+    </li>
+  <% end %>
+</ul>

@@ -201,6 +201,14 @@ class Story < ActiveRecord::Base
     ([requested_by, owned_by] + notes.map(&:user)).compact.uniq
   end
 
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
+  end
+
   private
 
     def set_accepted_at
