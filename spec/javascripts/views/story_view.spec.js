@@ -163,7 +163,6 @@ describe('StoryView', function() {
       expect(disable_spy).toHaveBeenCalled();
       expect(enable_spy).not.toHaveBeenCalled();
       expect($(this.view.el).find('a.collapse').hasClass('icons-throbber')).toBeTruthy();
-
       this.server.respond();
 
       expect(enable_spy).toHaveBeenCalled();
@@ -406,7 +405,7 @@ describe('StoryView', function() {
     afterEach(function() {
       this.view.model.set({editing: false});
     });
-    
+
     it("is text area when story is new", function() {
       this.view.model.isNew = sinon.stub().returns(true);
       this.view.render();
@@ -436,5 +435,8 @@ describe('StoryView', function() {
     });
 
   });
+<<<<<<< HEAD
 
+=======
+>>>>>>> malclocke/master
 });
