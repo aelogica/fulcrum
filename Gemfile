@@ -13,13 +13,11 @@ end
 gem 'jquery-rails'
 gem 'rails-backbone'
 
-gem 'devise'
+gem 'devise', '1.4.7'
 gem 'cancan'
 gem 'transitions', '0.0.9', :require => ["transitions", "active_record/transitions"]
 
 gem 'fastercsv', '1.5.3', :platforms => :ruby_18
-
-gem 'pivotal-tracker'
 
 # (using standard csv lib if ruby version is 1.9)
 
