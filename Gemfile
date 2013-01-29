@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.1.1'
+gem 'rails', '~> 3.1.10'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -16,10 +16,6 @@ gem 'rails-backbone'
 gem 'devise', '1.4.7'
 gem 'cancan'
 gem 'transitions', '0.0.9', :require => ["transitions", "active_record/transitions"]
-
-gem 'fastercsv', '1.5.3', :platforms => :ruby_18
-
-# (using standard csv lib if ruby version is 1.9)
 
 group :production do
   gem 'pg'
